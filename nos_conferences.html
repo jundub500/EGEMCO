@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE/nos_conferences.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="section-conference">
+            <h1 id="conference A">Nos conferences</h1>
+            <div class="conference-item">
+                <div class="conference-details">
+                    <h3>Conference:</h3>
+                    <p><strong>Lieu:</strong></p>
+                    <p><strong>Place:</strong></p>
+                    <p><strong>Description:</strong>, conférence internationale des opérateurs économiques burundais avec des investisseurs norvégiens</p>
+                </div>
+                <div class="conference-photos"  >
+                    <img src="PHOTO/clarion hotel oslio.png" alt="" onclick="openLightbox(this)">
+                    <img src="PHOTO/op.eco.jpg" alt="" onclick="openLightbox(this)">
+                    <img src="PHOTO/oslo,norway.jpg" alt="" onclick="openLightbox(this)">
+                    <img src="PHOTO/2sur ordi.jpg" alt=""  onclick="openLightbox(this)">
+                </div>
+                <div class="hidden" id="lightbox" onclick="closeLightbox()">
+                    <i class="fas fa-times close" ></i>
+                    <img id="lightbox-img" src="" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenupied">
+         <div class="gauche">
+             <div class="contactitem">
+                 <span class="cercleicone"><i class="fas fa-phone"></i></span>
+             <span class="texte">+25779814021</span>
+             </div>
+         <div class="contactitem">
+             <span class="cercleicone"><i class="fas fa-envelope"></i></span>
+             <span class="texte">egemco2013@gmail.com</span> 
+         </div>
+         <div class="contactitem">
+             <span class="cercleicone"><i class="fas fa-map-marker-alt"></i></span>
+             <span class="texte">Quartier Rubirixi RN5,Ntahangwa<br>Bujumbura,Burundi</span> 
+         </div>
+         </div>
+         <div class="droite">
+             <div class="nomsociete">EGEMCO</div>
+             <div class="iconesociale">
+                 <span class="cercleicone"><i class="fab fa-facebook-f"></i></span>
+                 <span class="cercleicone"><i class="fab fa-twitter"></i></span>
+                 <span class="cercleicone"><i class="fab fa-instagram"></i></span>
+                 <span class="cercleicone"><i class="fab fa-linkedin-in"></i></span>
+             </div>
+         </div>
+        </div>
+ 
+     </footer>
+     <script src="conference.js" defer></script>
+</body>
+</html>
