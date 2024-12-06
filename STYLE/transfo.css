@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+main{
+    width: 100%;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.titre{
+    text-align: center;
+    font-size: 28px;
+    background-color: #25D366;
+    color: white;
+   
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+   
+}
+.sectionplan{
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f1f8f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.sectionplan h3{
+    font-size: 22px;
+    color: #25D366;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #25D366;
+    padding-bottom: 5px;
+}
+.sectionplan p{
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+
+}
+.imgplan{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.tableplie{
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+    margin: 20px 0;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+   
+}
+th,td{
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+th{
+    background-color: #25D366;
+    color: white;
+}
+.tableplie::before{
+    content: '->';
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #25D366;
+    display: none;
+    z-index: 1;
+
+}
+.tableplie::after{
+    content: "<i class="fas fa-arrow-right"></i>";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #25D366;
+    display: none;
+    z-index: 1;
+}
+.tableplie::-webkit-scrollbar{
+    height: 8px;
+    display: none;
+}
+
+.tableplie:active::before,
+.tableplie:active::after,
+.tableplie:hover::before,
+.tableplie:hover::after{
+    display: block;
+}
+@media(max-width:768px){
+    .sectionplan{
+        padding: 15px;
+    }
+    .sectionplan h3{
+        font-size: 20px;
+    }
+    .sectionplan p{
+        font-size: 14px;
+    }
+    .imgplan{
+        max-width: 100%;
+    }
+    table{
+        font-size: 14px;
+    }
+    th,td{
+        padding: 8px;
+    }
+}
+@media (max-width:480px){
+    .sectionplan{
+        padding: 10px;
+    }
+    .sectionplan h3{
+        font-size: 18px;
+    }
+    .sectionplan p{
+        font-size: 12px;
+    }
+    .imgplan{
+        max-width: 100%;
+    }
+
+    table{
+        font-size: 14px;
+    }
+    th,td{
+        padding: 8px;
+    }
+    table{
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+footer{
+    background-color: #252525;
+    padding: 20px 10px;
+    color: #f1f1f1;
+    font-family: Arial,sans-serif;
+
+}
+.contenupied{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.gauche{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+.contactitem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.droite{
+    text-align: right;
+}
+.nomsociete{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #f1f1f1;
+
+}
+.iconesociale{
+    display: flex;
+    gap: 10px;
+}
+.cercleicone{
+    width: 40px;
+    height: 40px;
+    background-color: #25D366;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 18px;
+}
+.iconesociale .cercleicone{
+    background-color: #0078ff;
+    transition: transform 0.3s ease;
+}
+.iconesociale .cercleicone:hover{
+    transform: scale(1.2);
+}
+@media(max-width:768px){
+    .contenupied{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .gauche,.droite{
+        text-align: center;
+    }
+}
+

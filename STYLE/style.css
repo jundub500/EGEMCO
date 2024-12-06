@@ -1,0 +1,242 @@
+body{
+    font-family: Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+}
+.logo h1{
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+.contenurech{
+    position: relative;
+    width: 300px;
+}
+.contenurech input{
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+#resltsreche{
+    position: absolute;
+    width:100%;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    border-radius: 0 0 5px 5px;
+    display: none;
+    z-index: 10;
+    overflow-y: auto;
+   max-height: 300px;
+}
+.result-item a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    font-size: 16px;
+    font-family: Arial,sans-serif
+}
+.result-item a:hover{
+    background-color: rgba(255,255,255,0.1)
+}
+.highlight{
+    color: yellow;
+    background-color: transparent;
+    font-weight: bold;
+}
+#entres{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+#resultsreche .result-item{
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    cursor: pointer;
+}
+#resltsreche .result-item:last-child{
+    border-bottom: none;
+}
+#resltsreche .result-item:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+.no-result{
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    padding: 8px 12px;
+    font-weight: bold;
+}
+
+main{
+    padding: 20px;
+}
+.linkverticale{
+    background-color: #f9f9f9;
+    padding: 0;
+}
+.linkitem{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    
+    border-radius: 5px;
+    border-bottom: 1px solid #128C7E;
+    box-sizing: border-box;
+    width: 100%;
+}
+.linkitem i{
+    color: #25D366;
+    margin-right: 10px;
+}
+.linkitem a{
+    text-decoration: none;
+    color: #25D366;
+}
+.linkitem a:hover i{
+    color: #45a049;
+}
+.linkverticale{
+    margin-top: 0;
+}
+.linkitem span{
+    flex-grow: 1;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.sectionmission{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.carte{
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    position: relative;
+    transition: transform 0.2s;
+    
+}
+.carte:hover{
+    transform: translateY(-5px);
+}
+.titrecarte{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #555;
+   
+}
+.cartedescription{
+    font-size: 1rem;
+    margin-bottom: 50px;
+    color: #555;
+}
+.buttoncarte{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+     
+
+}
+.buttoncarte:hover{
+    background-color: #45a049;
+
+}
+footer{
+    background-color: #252525;
+    padding: 20px 10px;
+    color: #f1f1f1;
+    font-family: Arial,sans-serif;
+
+}
+.contenupied{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.gauche{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+.contactitem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.droite{
+    text-align: right;
+}
+.nomsociete{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #f1f1f1;
+
+}
+.iconesociale{
+    display: flex;
+    gap: 10px;
+}
+.cercleicone{
+    width: 40px;
+    height: 40px;
+    background-color: #25D366;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 18px;
+}
+.iconesociale .cercleicone{
+    background-color: #0078ff;
+    transition: transform 0.3s ease;
+}
+.iconesociale .cercleicone:hover{
+    transform: scale(1.2);
+}
+@media(max-width:768px){
+    .contenupied{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .gauche,.droite{
+        text-align: center;
+    }
+}
+

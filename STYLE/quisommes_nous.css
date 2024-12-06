@@ -1,0 +1,146 @@
+body{
+    font-family: Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    color: #333;
+}
+header{
+    background-color: #25D366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.contenu{
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+h1,h2{
+    color: #25D366;
+    text-align: center;
+}
+.presentation{
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+.presentation{
+    line-height: 1.8;
+}
+.placeholder{
+    margin: 20px 0;
+    text-align: center;
+    border: 2px dashed #25D366;
+    padding: 40px;
+    border-radius: 8px;
+    color: #25D366;
+}
+.team-section{
+    margin-top: 40px;
+}
+.team-section h2{
+    margin-bottom: 20px;
+}
+.team-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.team-member{
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+}
+.team-member img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #25D366;
+}
+.team-member h3{
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #333;
+}
+.team-member p{
+    font-size: 14px;
+    color: #666;
+}
+footer{
+    background-color: #252525;
+    padding: 20px 10px;
+    color: #f1f1f1;
+    font-family: Arial,sans-serif;
+
+}
+.contenupied{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.gauche{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+.contactitem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.droite{
+    text-align: right;
+}
+.nomsociete{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #f1f1f1;
+
+}
+.iconesociale{
+    display: flex;
+    gap: 10px;
+}
+.cercleicone{
+    width: 40px;
+    height: 40px;
+    background-color: #25D366;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 18px;
+}
+.iconesociale .cercleicone{
+    background-color: #0078ff;
+    transition: transform 0.3s ease;
+}
+.iconesociale .cercleicone:hover{
+    transform: scale(1.2);
+}
+@media(max-width:768px){
+    .contenupied{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .gauche,.droite{
+        text-align: center;
+    }
+}
+
